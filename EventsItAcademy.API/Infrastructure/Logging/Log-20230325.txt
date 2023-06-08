@@ -1,0 +1,63 @@
+2023-03-25 17:35:31.230 +04:00 [INF] Staring web host 
+2023-03-25 17:35:49.624 +04:00 [INF] Logged in3/25/2023 5:35:49 PM 
+2023-03-25 18:53:11.928 +04:00 [INF] Staring web host 
+2023-03-25 18:54:49.735 +04:00 [ERR] An unhandled exception has occurred while executing the request. EventsItAcademy.Application.CustomExcepitons.ItemNotFoundException: Event with Id:111 not found in database
+   at EventsItAcademy.Application.Events.EventService.GetByIdAsync(CancellationToken cancellationToken, Int32 id, String userId) in C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Application\Events\EventService.cs:line 76
+   at EventsItAcademy.API.Controllers.EventController.GetbyId(CancellationToken cancellationToken, Int32 id) in C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.API\Controllers\EventController.cs:line 46
+   at lambda_method142(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-03-25 19:46:30.666 +04:00 [INF] Staring web host 
+2023-03-25 19:47:14.421 +04:00 [ERR] 
+---- Exception Log ----
+{"LogLevel":2,"Code":"ItemNotFoundException","TraceId":"0HMPD90DB85FH:0000001B","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"Event with Id:111 not found in database","Status":404,"Detail":null,"Instance":"/api/Event/user/111","Extensions":{"TraceId":"0HMPD90DB85FH:0000001B"}} 
+2023-03-25 22:23:00.833 +04:00 [INF] Staring web host 
+2023-03-25 22:23:58.731 +04:00 [ERR] 
+---- Exception Log ----
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMPDBNRU3K1Q:00000019","Type":null,"Title":"Culture is not supported. (Parameter 'name')\r\nen-US,en;q=0 is an invalid culture identifier.","Status":500,"Detail":null,"Instance":"/api/User/Login","Extensions":{"TraceId":"0HMPDBNRU3K1Q:00000019"}} 
+2023-03-25 22:24:02.570 +04:00 [ERR] 
+---- Exception Log ----
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMPDBNRU3K1Q:0000001B","Type":null,"Title":"Culture is not supported. (Parameter 'name')\r\nen-US,en;q=0 is an invalid culture identifier.","Status":500,"Detail":null,"Instance":"/api/User/Login","Extensions":{"TraceId":"0HMPDBNRU3K1Q:0000001B"}} 
+2023-03-25 22:25:16.438 +04:00 [ERR] 
+---- Exception Log ----
+{"LogLevel":2,"Code":"InvalidEmailException","TraceId":"0HMPDBNRU3K1S:00000002","Type":"https://datatracker.ietf.org/doc/html/rfc7235#section-3.1","Title":"იმეილი არავალიდურია","Status":401,"Detail":null,"Instance":"/api/User/Login","Extensions":{"TraceId":"0HMPDBNRU3K1S:00000002"}} 
+2023-03-25 23:20:10.354 +04:00 [INF] Staring web host 
+2023-03-25 23:20:21.525 +04:00 [ERR] 
+---- Exception Log ----
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMPDCNPTL6HS:00000019","Type":null,"Title":"Culture is not supported. (Parameter 'name')\r\nen-US,en;q=0 is an invalid culture identifier.","Status":500,"Detail":null,"Instance":"/swagger/health","Extensions":{"TraceId":"0HMPDCNPTL6HS:00000019"}} 
+2023-03-25 23:20:58.605 +04:00 [INF] Staring web host 
+2023-03-25 23:21:09.468 +04:00 [ERR] 
+---- Exception Log ----
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMPDCO8EEV19:00000017","Type":null,"Title":"Culture is not supported. (Parameter 'name')\r\nen-US,en;q=0 is an invalid culture identifier.","Status":500,"Detail":null,"Instance":"/health","Extensions":{"TraceId":"0HMPDCO8EEV19:00000017"}} 
+2023-03-25 23:31:44.983 +04:00 [INF] Staring web host 
+2023-03-25 23:31:51.992 +04:00 [ERR] 
+---- Exception Log ----
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMPDCU8TJSPM:00000015","Type":null,"Title":"Culture is not supported. (Parameter 'name')\r\nen-US,en;q=0 is an invalid culture identifier.","Status":500,"Detail":null,"Instance":"/health","Extensions":{"TraceId":"0HMPDCU8TJSPM:00000015"}} 
+2023-03-25 23:33:38.106 +04:00 [INF] Staring web host 
+2023-03-25 23:33:44.771 +04:00 [ERR] 
+---- Exception Log ----
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMPDCVAI3K0F:00000017","Type":null,"Title":"Culture is not supported. (Parameter 'name')\r\nen-US,en;q=0 is an invalid culture identifier.","Status":500,"Detail":null,"Instance":"/health","Extensions":{"TraceId":"0HMPDCVAI3K0F:00000017"}} 
+2023-03-25 23:34:47.343 +04:00 [INF] Staring web host 
+2023-03-25 23:34:54.622 +04:00 [ERR] 
+---- Exception Log ----
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMPDCVVAFL10:00000017","Type":null,"Title":"Culture is not supported. (Parameter 'name')\r\nen-US,en;q=0 is an invalid culture identifier.","Status":500,"Detail":null,"Instance":"/health","Extensions":{"TraceId":"0HMPDCVVAFL10:00000017"}} 
+2023-03-25 23:35:06.881 +04:00 [INF] Staring web host 
+2023-03-25 23:36:18.453 +04:00 [INF] Staring web host 
+2023-03-25 23:58:28.518 +04:00 [INF] Staring web host 

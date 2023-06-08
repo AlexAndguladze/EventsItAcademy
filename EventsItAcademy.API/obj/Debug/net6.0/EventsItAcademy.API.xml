@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EventsItAcademy.API</name>
+    </assembly>
+    <members>
+        <member name="M:EventsItAcademy.API.Controllers.V1.EventController.GetbyId(System.Threading.CancellationToken,System.Int32)">
+             <summary>
+             Gets specified Event from database
+             </summary>
+             <param name="cancellationToken"></param>
+             <param name="id"></param>
+             <returns></returns>
+            
+        </member>
+        <member name="M:EventsItAcademy.API.Controllers.V1.EventController.GetAllOfUser(System.Threading.CancellationToken)">
+             <summary>
+             Gets authorized User's Events from database
+             </summary>
+             <param name="cancellationToken"></param>
+             <returns></returns>
+            
+        </member>
+        <member name="M:EventsItAcademy.API.Controllers.V1.EventController.GetAll(System.Threading.CancellationToken)">
+             <summary>
+             Gets all events from database
+             </summary>
+             <param name="cancellationToken"></param>
+             <returns></returns>
+            
+        </member>
+        <member name="M:EventsItAcademy.API.Controllers.V1.EventController.Create(System.Threading.CancellationToken,EventsItAcademy.Application.Events.Requests.EventRequestModel)">
+             <summary>
+             Adds new event in database
+             </summary>
+             <param name="cancellationToken"></param>
+             <param name="event"></param>
+             <returns></returns>
+            
+        </member>
+        <member name="M:EventsItAcademy.API.Controllers.V1.EventController.Delete(System.Threading.CancellationToken,System.Int32)">
+            <summary>
+            Deletes specified event from database
+            </summary>
+            <param name="cancellationToken"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EventsItAcademy.API.Controllers.TicketController.Create(System.Threading.CancellationToken,EventsItAcademy.Application.Tickets.Requests.TicketRequestModel)">
+             <summary>
+             Adds new ticket in database
+             </summary>
+             <param name="cancellationToken"></param>
+             <param name="ticket"></param>
+             <returns></returns>
+            
+        </member>
+        <member name="M:EventsItAcademy.API.Controllers.TicketController.UpdateAsync(System.Threading.CancellationToken,EventsItAcademy.Application.Tickets.Requests.TicketRequestModel,System.Int32)">
+             <summary>
+             Updates ticket in database
+             </summary>
+             <param name="cancellationToken"></param>
+             <param name="ticket"></param>
+             <param name="id"></param>
+             <returns></returns>
+            
+        </member>
+        <member name="M:EventsItAcademy.API.Controllers.UserController.RegisterAsync(EventsItAcademy.Application.Users.Requests.UserRegisterRequestModel)">
+             <summary>
+             Registers user
+             </summary>
+             <param name="model"></param>
+             <returns></returns>
+            
+        </member>
+        <member name="M:EventsItAcademy.API.Controllers.UserController.LoginAsync(EventsItAcademy.Application.Users.Requests.UserLoginRequestModel)">
+             <summary>
+             Logs in user
+             </summary>
+             <param name="model"></param>
+             <returns></returns>
+            
+        </member>
+        <member name="T:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages.DeleteFailed">
+            <summary>
+              Looks up a localized string similar to Could not delete item.
+            </summary>
+        </member>
+        <member name="P:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages.Empty">
+            <summary>
+              Looks up a localized string similar to Field must not be empty.
+            </summary>
+        </member>
+        <member name="P:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages.InvalidEmail">
+            <summary>
+              Looks up a localized string similar to Email is invalid.
+            </summary>
+        </member>
+        <member name="P:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages.InvalidPassword">
+            <summary>
+              Looks up a localized string similar to Password is invalid.
+            </summary>
+        </member>
+        <member name="P:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages.MaxLength">
+            <summary>
+              Looks up a localized string similar to Entered value is more than maximum length.
+            </summary>
+        </member>
+        <member name="P:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages.MinLength">
+            <summary>
+              Looks up a localized string similar to Entered value is less than minimal length.
+            </summary>
+        </member>
+        <member name="P:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages.NotFound">
+            <summary>
+              Looks up a localized string similar to Item not found.
+            </summary>
+        </member>
+        <member name="P:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages.PasswordDontMatch">
+            <summary>
+              Looks up a localized string similar to Password Does not match.
+            </summary>
+        </member>
+        <member name="P:EventsItAcademy.API.Infrastructure.Localization.ErrorMessages.RegistrationModelIsNull">
+            <summary>
+              Looks up a localized string similar to Registration model is null.
+            </summary>
+        </member>
+    </members>
+</doc>

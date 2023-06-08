@@ -1,0 +1,12 @@
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\bin\Debug\net6.0\EventsItAcademy.Domain.deps.json
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\bin\Debug\net6.0\EventsItAcademy.Domain.dll
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\bin\Debug\net6.0\EventsItAcademy.Domain.pdb
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\obj\Debug\net6.0\EventsItAcademy.Domain.csproj.AssemblyReference.cache
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\obj\Debug\net6.0\EventsItAcademy.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\obj\Debug\net6.0\EventsItAcademy.Domain.AssemblyInfoInputs.cache
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\obj\Debug\net6.0\EventsItAcademy.Domain.AssemblyInfo.cs
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\obj\Debug\net6.0\EventsItAcademy.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\obj\Debug\net6.0\EventsItAcademy.Domain.dll
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\obj\Debug\net6.0\refint\EventsItAcademy.Domain.dll
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\obj\Debug\net6.0\EventsItAcademy.Domain.pdb
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Domain\obj\Debug\net6.0\ref\EventsItAcademy.Domain.dll

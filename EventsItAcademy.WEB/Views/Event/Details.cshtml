@@ -1,0 +1,50 @@
+﻿@using EventsItAcademy.Application.Events.Responses
+@model EventResponseModel
+
+@{
+    bool ticketsAvailabale = ViewBag.AreTicketsAvailable;
+    bool userTicketExists = ViewBag.UserTicketExists;
+    bool isBought = ViewBag.IsBought;
+    bool isLoggedIn = ViewBag.IsLoggedIn;
+}
+<div class="align-content-center">
+    <div class="card">
+        <h1 class="card-title">@Model.Title</h1>
+        <div class="card-body">
+            <p class="card-text">@Model.Destription</p>
+            <p class="card-text">@Model.StartDate.ToString("f") - @Model.EndDate.ToString("f")</p>
+        </div>
+        <div class="card-footer">
+            @if (isLoggedIn && ticketsAvailabale && userTicketExists==false)
+            {
+                <p class="card-text font-weight-bold">Tickets left: @Model.TicketQuantity</p>
+                <a class="btn btn-secondary" asp-controller="Ticket" asp-action="Book" asp-route-eventId="@Model.Id">Book Ticket</a>
+                <a class="btn btn-success" asp-controller="Ticket" asp-action="Buy" asp-route-eventId="@Model.Id">Buy Ticket</a>
+            }
+            else if(isLoggedIn && ticketsAvailabale == false)
+            {
+                <p class="card-text font-weight-bold text-danger">There are no more tickets for this evenet :(</p>
+            }
+            else if(isLoggedIn && userTicketExists && isBought == false)
+            {
+                <p class="card-text font-weight-bold">Tickets left: @Model.TicketQuantity</p>
+                <p class="card-text font-weight-bold">You booked this ticket</p>
+                <a class="btn btn-success" asp-controller="Ticket" asp-action="BuyBooked" asp-route-eventId="@Model.Id">Buy Booked Ticket</a>
+            }
+            else if(isLoggedIn && userTicketExists && isBought)
+            {
+                <p class="card-text font-weight-bold">Tickets left: @Model.TicketQuantity</p>
+                <p class="card-text font-weight-bold text-success">Ticket Bought!</p>
+            }
+        </div>
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="card-body">
+                <a class="btn btn-danger" asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id">Delete Event</a>
+            </div>
+        }
+        
+    </div>
+    
+    
+</div>

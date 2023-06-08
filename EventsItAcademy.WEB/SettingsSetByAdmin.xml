@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <EventEditLimitDays>4</EventEditLimitDays>
+  <EventBookingPeriod>3</EventBookingPeriod>
+</Settings>

@@ -1,0 +1,55 @@
+﻿@using EventsItAcademy.Application.Events.Responses
+@{
+    ViewData["Title"] = "Events";
+    string ownerId = ViewData["OwnerId"].ToString();
+    int editableDays = int.Parse(ViewData["EditableDays"].ToString());
+}
+@model List<EventResponseModel>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="d-flex justify-content-center">
+
+
+<div class="d-flex flex-column justify-content-center"  style="width: 28rem;">
+    <div class="card text-center m-l-6 m-r-6">
+         <input class="btn btn-primary" type="button" value="Create" onclick="location.href='@Url.Action("Create", "Event")'" />
+    </div>
+    <hr />
+    <h1>@ViewData["Title"]</h1>
+    <br />
+
+    @foreach(EventResponseModel item in Model)
+    {
+      <div class="card shadow p-3 mb-4 bg-white rounded  border">
+          
+               <h5 class="card-title">@item.Title</h5>
+               <div class="card-footer">
+               <div class="d-flex justify-content-between">
+                    <p class="font-weight-bold align-middle"> <i class="fa fa-clock-o align-middle"></i> @item.StartDate.ToString("M") - @item.EndDate.ToString("M")</p>
+                    <div>
+                            @if (ownerId == @item.OwnerId)
+                            {
+                                if(@item.CreatedOn > DateTime.Now.AddDays(-editableDays))
+                                {
+                                    <a class="btn btn-primary" asp-controller="Event" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                                }
+                                else
+                                {
+                                     <a class="btn btn-secondary disabled" role="button">Edit</a>
+                                }
+                            }
+
+                        <a class="btn btn-primary" asp-controller="Event" asp-action="Details" asp-route-id="@item.Id">More</a>
+                    </div>
+               </div>
+               </div>
+ 
+      </div>
+    }
+</div>
+
+</div>
+
+
+
+

@@ -1,0 +1,30 @@
+﻿@model List<UserRoleViewModel>
+
+<div class="card">
+   <div class="card-header">
+       <h2 class="card-title">@ViewBag.roleName</h2>
+   </div>
+   <div class="card-body">
+       <a class="btn btn-primary" asp-controller="Admin" asp-action="EditUsersInRole" asp-route-roleId="@ViewBag.roleId">Add or Delete Users</a>
+       <br />
+       <br />
+       <h5 class="card-subtitle">Users in this role</h5>
+
+       @if (Model.Count == 0)
+            {
+                <p class="card-text"><small>There are no users in this role</small></p>
+            }
+        else
+            {
+                <ul class="list-group list-group-flush">
+                @foreach(var userModel in @Model)
+                {
+                    <li class="list-group-item">@userModel.UserName | <small>@userModel.UserId</small></li>
+                }
+                 </ul>
+            }
+      
+   </div>
+    
+
+</div>

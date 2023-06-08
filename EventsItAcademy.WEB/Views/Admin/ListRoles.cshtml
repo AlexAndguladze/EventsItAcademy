@@ -1,0 +1,22 @@
+﻿@using EventsItAcademy.Application.Roles.Respones
+@model List<IdentityRoleResponseModel>
+
+@{
+    ViewBag.Title = "All Roles";
+}
+<div class="card">
+    <div class="card-header">
+    Roles
+  </div>
+    <div class="card-body">
+        @foreach(var role in Model)
+        {
+            <div class="card-body">
+                <h5 class="card-title">@role.Name</h5>
+                <p class="card-text">Id @role.Id</p>
+            </div>
+            <br/>
+             <a class="btn btn-primary" asp-controller="Admin" asp-action="EditRole" asp-route-id="@role.Id">Edit</a>
+        }
+        </div>
+    </div>

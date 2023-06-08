@@ -1,0 +1,17 @@
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\bin\Debug\net6.0\EventsItAcademy.Persistence.deps.json
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\bin\Debug\net6.0\EventsItAcademy.Persistence.runtimeconfig.json
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\bin\Debug\net6.0\EventsItAcademy.Persistence.dll
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\bin\Debug\net6.0\EventsItAcademy.Persistence.pdb
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\bin\Debug\net6.0\EventsItAcademy.Domain.dll
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\bin\Debug\net6.0\EventsItAcademy.Domain.pdb
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\obj\Debug\net6.0\EventsItAcademy.Persistence.csproj.AssemblyReference.cache
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\obj\Debug\net6.0\EventsItAcademy.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\obj\Debug\net6.0\EventsItAcademy.Persistence.AssemblyInfoInputs.cache
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\obj\Debug\net6.0\EventsItAcademy.Persistence.AssemblyInfo.cs
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\obj\Debug\net6.0\EventsItAcademy.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\obj\Debug\net6.0\EventsItAcademy.Persistence.csproj.CopyComplete
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\obj\Debug\net6.0\EventsItAcademy.Persistence.dll
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\obj\Debug\net6.0\refint\EventsItAcademy.Persistence.dll
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\obj\Debug\net6.0\EventsItAcademy.Persistence.pdb
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\obj\Debug\net6.0\EventsItAcademy.Persistence.genruntimeconfig.cache
+C:\Users\Bazo\source\repos\EventsItAcademy.API\EventsItAcademy.Persistence\obj\Debug\net6.0\ref\EventsItAcademy.Persistence.dll
